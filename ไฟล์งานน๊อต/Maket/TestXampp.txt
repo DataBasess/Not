@@ -1,0 +1,27 @@
+﻿\xampp\apache\bin\ab.exe
+ab.exe -c 20 -n 20 -t 3 http://localhost/phpMyAdmin/index.php
+
+ab.exe -c 200 -n 20 -t 3 http://stocker2.esy.es/user/login
+ab.exe -c 2000 -n 20 -t 3 https://www.facebook.com/
+ab.exe -c 2000 -n 20 -t 3 https://www.google.co.th/
+ab.exe -c 2000 -n 20 -t 3 http://oracle-java.blogspot.com/2007/08/web-application-jmeter.html
+
+ab.exe -c 20 -n 20 -t 3 http://www.thaicreate.com/community/php-codeigniter-framework-video-tutorial.html
+ab.exe -c 20 -n 20 -t 3 http://localhost/dashboard/.
+
+-c 20 concurrency  	จำนวนการร้องขอพร้อมๆกัน(User limit)
+-n 20 requests		จำนวนการร้องขอ(Requests limit)
+-t 3 timelimit		เวลาสูงสุดในการร้องขอ(Loadtime limit)
+Concurrency Level	จำนวนการร้องขอพร้อมกันสูงสุดที่กำหนดไว้
+Complete requests	จำนวนการร้องขอที่สำเร็จ
+Failed requests		จำนวนการร้องขอที่ล้มเหลว
+Requests per second	ค่าเฉลี่ยการร้องขอต่อวินาที
+Time per request	ค่าเฉลี่ยการตอบต่อ 1 request
+
+ab.exe -c 1000 -n 20 -t 4 http://www.northbkk.ac.th/
+
+ab.exe -c 10 -n 20 -t 3 http://www.thaicreate.com/
+
+ab.exe -c 5 -n 20 -t 3 http://register.northbkk.ac.th/registrar/home.asp
+
+
